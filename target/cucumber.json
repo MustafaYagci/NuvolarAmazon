@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-02T09:45:33.401Z",
+        "start_timestamp": "2020-10-02T09:52:21.629Z",
         "before": [
           {
             "result": {
-              "duration": 7050953900,
+              "duration": 7023476300,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,6 @@
         "after": [
           {
             "result": {
-              "duration": 1995200,
               "status": "passed"
             },
             "match": {
@@ -35,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2225471700,
+              "duration": 399986200,
               "status": "passed"
             },
             "line": 5,
@@ -53,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 3318071800,
+              "duration": 8786764700,
               "status": "passed"
             },
             "line": 6,
@@ -75,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 1323553600,
+              "duration": 1548429600,
               "status": "passed"
             },
             "line": 7,
@@ -87,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 1730753100,
+              "duration": 158620100,
               "status": "passed"
             },
             "line": 8,
@@ -105,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 2950035100,
+              "duration": 3458939300,
               "status": "passed"
             },
             "line": 9,
@@ -127,7 +126,7 @@
           },
           {
             "result": {
-              "duration": 1112636900,
+              "duration": 1327859500,
               "status": "passed"
             },
             "line": 10,
@@ -139,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 149633700,
+              "duration": 595603900,
               "status": "passed"
             },
             "line": 11,
@@ -158,6 +157,18 @@
               "location": "com.Nuvolar.testScripts.itemChartStepDefs.change_the_quantity_for_to_item(java.lang.String,int)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2116182900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "assert total price and quantity are changed correctly",
+            "match": {
+              "location": "com.Nuvolar.testScripts.itemChartStepDefs.assert_total_price_and_quantity_are_changed_correctly()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [

@@ -3,15 +3,15 @@ I used Page Object Model (POM) in this framework to centralize the Web Elements 
 In case of any update or change in locators no need to change static way.
 With the help of POM you only change it from centralized place and it will be updated in all test scripts.
 
---configuration.properties & ConfigurationSeter
+--configuration.properties & ConfigurationReader
 In this framework I used configuration.properties file to use and access some common and repeated datas.
 ConfigurationSeter class to convert this datas into Java.
 
---Feature file
+--features file
 Increase the readebility of the test scripts and connect the execution order.
 Both technical and non technical people can understand what is going on the test scripts.
 
---stepDefinition package
+--testScripts package
 Takes the corresponding feature file and convert to Java Code.
 All the corresponding test script of feature files locates in this package
 TestBase.class -> Works with Cucumber annotations.
@@ -23,11 +23,6 @@ Runner -> It is our fire starter. We will provide some tags of test suites ex:(@
           so it will create automaticaly step definitions where there is needed.
           You also can add plugins I added "json:target/cucumber.json" so it will handle reporting.
 
-FailedRunner -> it will store our failed test feature files paths inside the target/rerun.txt
-                so we can run only failed test scripts.
-
---docs file
-It will store the documents related to project ex: if you are doing Data driven testing tou can add excel file.
 
 --utilities package
 ShortCuts -> I created my own codes to make it easy and dynamic.

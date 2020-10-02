@@ -79,6 +79,7 @@ public class itemChartStepDefs {
     public void assert_total_price_and_quantity_are_changed_correctly() {
          ShortCuts.waitTillVisibility(scp.totalPrice);
          ShortCuts.waitTillVisibility(scp.totalItemNumber);
+         ShortCuts.staticWait(2000);
          double expectedTotalPrice=(numberOfManHats*priceManHats)+(numberOfWomenHats*priceWomenHats);
          double actualTotalPrice=ShortCuts.priceConverterToDouble(scp.totalPrice.getText());
          Assert.assertEquals(Math.round(expectedTotalPrice * 100.0) / 100.0,actualTotalPrice, 0.0);

@@ -87,6 +87,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "assert total price and quantity are changed correctly",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.Nuvolar.testScripts.itemChartStepDefs.assert_total_price_and_quantity_are_changed_correctly()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
