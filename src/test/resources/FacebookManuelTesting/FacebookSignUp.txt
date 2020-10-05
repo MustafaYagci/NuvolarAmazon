@@ -1,0 +1,27 @@
+Feature: Sign Up Page
+
+ Scenario: User should be able to sign up with valid credentials
+
+       Given user should navigate to "https://www.facebook.com/"
+       When  user sould see the "Create New Account" button
+       Then  user sould be able to click
+       And   user shoul be able to see "Sign Up" header
+       Given user should be able to type valid credentials
+       |FirstName  | Mustafa |
+       |LastName   |  Yagci  |
+       |Phone      |600296046|
+       |NewPassword|nuvolar21|
+       |BirthMonth |   May   |
+       |BirthDate  |    18   |
+       |BirthYear  |   1974  |
+       And  user should be able to chose gender "Male"
+       When user sould see the "Sign Up" button
+       Then user sould be able to click
+       And  user shoul be able to see "Enter the code from the SMS" header
+       Then user should be able to type the received code
+       When user sould see the "Continue" button
+       Then user sould be able to click
+       And  user shoul be able to see "Account Confirmed" header
+
+
+       # I used Gherkin pipelines to make testcase short and efficient. I made positive testing with valid credentials.
